@@ -1,0 +1,7 @@
+.git
+.qa
+data
+__pycache__
+tests
+docs
+*.zip

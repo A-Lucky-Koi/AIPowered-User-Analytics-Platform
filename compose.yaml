@@ -1,0 +1,11 @@
+services:
+  game-insight:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - insight-data:/app/data
+    restart: unless-stopped
+    init: true
+volumes:
+  insight-data:
